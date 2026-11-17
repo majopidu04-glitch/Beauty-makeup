@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, ShieldCheck, Sparkles, Feather } from 'lucide-react';
+import heroGlowImg from '../assets/images/hero_glow_beauty_luxury_1794328755795.jpg';
 
 interface HeroProps {
   onExploreClick: () => void;
@@ -81,7 +82,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreClick }) => {
               {/* Main Campaign Image */}
               <div className="relative overflow-hidden rounded-xl border border-[#EADBCE] shadow-xl bg-white aspect-[16/10] sm:aspect-[16/11]">
                 <img
-                  src="/src/assets/images/hero_glow_beauty_luxury_1794328755795.jpg"
+                  src={heroGlowImg}
                   alt="Colección Glow Beauty en mármol y telas de seda blanca"
                   className="w-full h-full object-cover object-center transform hover:scale-102 transition-transform duration-700"
                   referrerPolicy="no-referrer"

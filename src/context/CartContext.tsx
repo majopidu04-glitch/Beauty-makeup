@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Product, CartItem, Shade, OrderReceipt } from '../types';
-import { COUPONS } from '../data/products';
+import { COUPONS, PRODUCTS } from '../data/products';
 
 interface ToastMessage {
   id: string;
@@ -51,7 +51,12 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [items, setItems] = useState<CartItem[]>(() => {
     try {
       const saved = localStorage.getItem(CART_STORAGE_KEY);
-      return saved ? JSON.parse(saved) : [];
+      if (!saved) return [];
+      const parsed: CartItem[] = JSON.parse(saved);
+      return parsed.map((item) => {
+        const freshProduct = PRODUCTS.find((p) => p.id === item.productId);
+        return freshProduct ? { ...item, product: freshProduct } : item;
+      });
     } catch {
       return [];
     }

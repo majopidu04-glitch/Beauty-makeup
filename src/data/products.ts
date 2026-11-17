@@ -1,4 +1,9 @@
 import { Product } from '../types';
+import lipstickVelvetImg from '../assets/images/product_velvet_lipstick_gold_1794328756962.jpg';
+import liquidHighlighterImg from '../assets/images/product_glow_liquid_highlighter_1794328756961.jpg';
+import radianceFoundationImg from '../assets/images/product_radiance_foundation_1794328757531.jpg';
+import eyeshadowPaletteImg from '../assets/images/product_eyeshadow_palette_nude_1794328758164.jpg';
+import heroLuxuryImg from '../assets/images/hero_glow_beauty_luxury_1794328755795.jpg';
 
 export const PRODUCTS: Product[] = [
   {
@@ -11,7 +16,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 34.00,
     rating: 4.9,
     reviewsCount: 142,
-    image: '/src/assets/images/product_velvet_lipstick_gold_1794328756962.jpg',
+    image: lipstickVelvetImg,
     description: 'Fórmula cremosa infundida con ácido hialurónico y manteca de karité que envuelve los labios en un color mate intenso sin resecar. Su elegante estuche estriado en oro y rosa suave ofrece cierre magnético de precisión.',
     finish: 'Mate aterciopelado',
     skinType: 'Todo tipo de labios',
@@ -40,7 +45,7 @@ export const PRODUCTS: Product[] = [
     price: 36.00,
     rating: 5.0,
     reviewsCount: 198,
-    image: '/src/assets/images/product_glow_liquid_highlighter_1794328756961.jpg',
+    image: liquidHighlighterImg,
     description: 'Iluminador líquido bifásico con microperlas ultrafinas suspendidas en aceites botánicos ligeros. Aporta un efecto mojado y un resplandor etéreo que captura la luz solar con naturalidad.',
     finish: 'Luminosidad nacarada radiante',
     skinType: 'Seca, mixta, normal y madura',
@@ -69,7 +74,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 50.00,
     rating: 4.8,
     reviewsCount: 220,
-    image: '/src/assets/images/product_radiance_foundation_1794328757531.jpg',
+    image: radianceFoundationImg,
     description: 'La fusión perfecta entre cuidado de la piel de lujo y maquillaje. Esta base de cobertura media modulable unifica el tono, disimula imperfecciones y deja un halo luminoso y fresco que dura todo el día.',
     finish: 'Segunda piel satinada',
     skinType: 'Todo tipo de piel, no comedogénica',
@@ -98,7 +103,7 @@ export const PRODUCTS: Product[] = [
     price: 48.00,
     rating: 4.9,
     reviewsCount: 165,
-    image: '/src/assets/images/product_eyeshadow_palette_nude_1794328758164.jpg',
+    image: eyeshadowPaletteImg,
     description: 'Una cuidada armonía de 5 mates aterciopelados y 4 brillos metálicos prensados con perlas multicromáticas. Pigmentos de grado farmacéutico formulados para difuminarse sin esfuerzo y sin desprendimiento.',
     finish: 'Mate sedoso y destello multicromático',
     skinType: 'Ojos sensibles y usuarias de lentes de contacto',
@@ -125,7 +130,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 38.00,
     rating: 4.9,
     reviewsCount: 88,
-    image: '/src/assets/images/hero_glow_beauty_luxury_1794328755795.jpg',
+    image: heroLuxuryImg,
     description: 'Preparador de cutis botánico que alisa los poros al instante, fija el maquillaje y entrega una dosis intensiva de hidratación gracias a su infusión de agua de rosas búlgaras y ácido hialurónico.',
     finish: 'Glow saludable sin brillos oleosos',
     skinType: 'Todo tipo de piel',
@@ -151,7 +156,7 @@ export const PRODUCTS: Product[] = [
     price: 24.00,
     rating: 4.7,
     reviewsCount: 110,
-    image: '/src/assets/images/product_velvet_lipstick_gold_1794328756962.jpg',
+    image: lipstickVelvetImg,
     description: 'La versatilidad del minimalismo diario. Un stick cremoso que se funde con el calor de las yemas de los dedos, aportando un rubor natural y saludable en mejillas y un tinte jugoso en labios.',
     finish: 'Rocío saludable modulable',
     skinType: 'Todo tipo de piel',
